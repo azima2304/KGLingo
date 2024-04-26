@@ -10,9 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 
-import com.example.kyrgyzlanguage.R;
 import com.example.kyrgyzlanguage.databinding.FragmentTeacherDescriptionBinding;
 import com.example.kyrgyzlanguage.models.ModelTeacher;
 
@@ -31,11 +29,6 @@ public class DescriptionFragment extends Fragment {
 
         adapter = new DescAdapter();
 
-        if(getArguments()!= null){
-            d_list = getArguments().getParcelableArrayList("favorite");
-        }else{
-            Toast.makeText(requireActivity(),"the are nothing", Toast.LENGTH_LONG).show();
-        }
 
     }
     @Override

@@ -9,6 +9,8 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,100 +31,138 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:src="@drawable/message"
+        android:layout_marginStart="20dp"
         android:contentDescription="This button might open another category"
     />
     </LinearLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:weightSum="2">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+    <LinearLayout
+        android:id="@+id/podcast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/round_back_white10"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/podcast"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textSize="18dp"
+        android:text="Podcast"/>
+    </LinearLayout>
 
-            <ImageButton
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:contentDescription="This button might open a specific category"  />
-
-            <ImageButton
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="10dp"
-                android:contentDescription="This button might open another category"  />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp">
-
-            <ImageButton
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:contentDescription="This button might open a specific category"  />
-
-            <ImageButton
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="10dp"
-                android:contentDescription="This button might open another category"  />
-        </LinearLayout>
-
-
-
+    <LinearLayout
+        android:id="@+id/words"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/round_back_white10"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/words"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Тебе может понравитпонравиться"/>
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textSize="18dp"
+            android:text="Words"/>
+    </LinearLayout>
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_podcast"
+</LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf    ="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_podcast"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:weightSum="2">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_words"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf    ="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_words"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_tests"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf    ="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_test"/>
+            <LinearLayout
+                android:id="@+id/test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/round_back_white10"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/test"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textSize="18dp"
+                    android:text="Test"/>
+            </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_articel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf    ="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_articel"/>
+            <LinearLayout
+                android:id="@+id/articel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/round_back_white10"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/newspaper"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textSize="18dp"
+                    android:text="Articel"/>
+            </LinearLayout>
 
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
