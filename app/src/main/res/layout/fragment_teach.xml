@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    tools:context=".TeachFragment">
+
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Learn the language with the best teachers from all over Kyrgyzstan!"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:background="@color/white"
+        android:src="@drawable/message"
+        android:layout_marginTop="20dp"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="Children" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="Exam" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="Conversational" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="Conversational" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_teachers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf    ="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_teach"/>
+
+
+
+
+
+</FrameLayout>
