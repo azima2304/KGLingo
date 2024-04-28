@@ -24,7 +24,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        rvChoose = findViewById(R.id.rv_choose);
+        rvChoose = findViewById(R.id.rv_tests);
         ImageView back = findViewById(R.id.back);
 
         // Set up RecyclerView
@@ -39,7 +39,6 @@ public class TestActivity extends AppCompatActivity {
         rvChoose.setLayoutManager(new LinearLayoutManager(this));
         rvChoose.setAdapter(adapter);
 
-        // Handle back button click
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

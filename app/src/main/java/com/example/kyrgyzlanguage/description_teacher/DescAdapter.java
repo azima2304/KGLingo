@@ -50,8 +50,8 @@ public class DescAdapter extends RecyclerView.Adapter<DescAdapter.ViewHolder> {
         }
 
         public void onBind(ModelTeacher modelTeacher) {
-            binding.teacherName.setText(modelTeacher.getName());
-            binding.status.setText(modelTeacher.getStatus());
+            binding.userName.setText(modelTeacher.getName());
+            binding.statusTeacher.setText(modelTeacher.getStatus());
             binding.description.setText(modelTeacher.getDesc());
         }
     }

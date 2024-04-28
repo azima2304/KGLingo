@@ -11,13 +11,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 
-import com.example.kyrgyzlanguage.databinding.FragmentTeacherDescriptionBinding;
+import com.example.kyrgyzlanguage.databinding.FragmentTeachBinding;
 import com.example.kyrgyzlanguage.models.ModelTeacher;
 
 import java.util.ArrayList;
 
 public class DescriptionFragment extends Fragment {
-    FragmentTeacherDescriptionBinding binding;
+    FragmentTeachBinding binding;
 
     ArrayList<ModelTeacher> d_list = new ArrayList<>();
     DescAdapter adapter;
@@ -35,7 +35,7 @@ public class DescriptionFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        binding = FragmentTeacherDescriptionBinding.inflate(inflater,
+        binding = FragmentTeachBinding.inflate(inflater,
                 container, false);
         View root = binding.getRoot();
         return root;
@@ -48,7 +48,7 @@ public class DescriptionFragment extends Fragment {
         }else {
             Toast.makeText(requireActivity(), "Вы не выбрали товар", Toast.LENGTH_SHORT).show();
         }
-        binding.rvDetailsTeacher.setAdapter(adapter);
+        binding.rvTeachers.setAdapter(adapter);
 
     }
 

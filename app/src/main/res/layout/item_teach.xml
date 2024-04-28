@@ -7,166 +7,194 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="36dp">
+
+<android.window.SplashScreenView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/rounded_background"
-            android:padding="8dp">
+            android:background="@drawable/rounded_background1">
 
             <ImageView
-                android:id="@+id/image_card"
-                android:layout_width="380dp"
+                android:id="@+id/image_teacher"
+                android:layout_width="wrap_content"
                 android:layout_height="200dp"
-                android:src="@drawable/info"
-                android:layout_gravity="center_horizontal"/>
+                android:background="@drawable/rounded_background1"
+                android:src="@drawable/teacher"
+                android:scaleType="centerCrop"/>
 
                 <LinearLayout
-                    android:layout_width="400dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp">
+                    android:orientation="vertical"
+                    android:padding="10dp">
 
-                    <ImageView
-                        android:id="@+id/image_card_model"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/user"
-                        android:layout_gravity="center_horizontal"/>
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/image_user"
+                            android:layout_width="25dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/user" />
+
+                        <TextView
+                            android:id="@+id/user_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:id="@+id/title_card"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Wella "
-                                android:textColor="@color/blue"
-                                android:textSize="16sp"
-                                android:textStyle="bold"
-                                android:layout_marginStart="16dp"/>
-
-                            <TextView
-                                android:id="@+id/price_card"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Репетитор"
-                                android:textColor="@color/black"
-                                android:textSize="12sp"
-                                android:textStyle="bold"
-                              />
- <LinearLayout
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:orientation="horizontal">
-     <ImageView
-         android:id="@+id/image_star"
-         android:layout_width="18dp"
-         android:layout_height="18dp"
-         android:src="@drawable/star"
-         android:layout_gravity="center_horizontal"/>
-
-     <TextView
-         android:id="@+id/icon_dollars"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:textColor="@color/black"
-         android:text="5.6"
-         android:textSize="13sp"
-         android:textStyle="bold" />
-
-
-
- </LinearLayout>
-                        </LinearLayout>
-
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="Arthur"
+                            android:textColor="@color/blue"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/status_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_bold"
+                android:layout_marginStart="20dp"
+                android:text="Tutor"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_star"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/star"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/estimation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="5.6"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            </LinearLayout>
 
 
                     <LinearLayout
                         android:id="@+id/text_3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
-                        android:padding="20dp"
+                        android:padding="10dp"
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:id="@+id/text_hard"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:orientation="vertical">
                             <TextView
+                                android:id="@+id/language"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textSize="15dp"
-                                android:textColor="@color/blue"
-                                android:text="Layer"/>
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:textColor="@color/black"
+                                android:text="Deutsch"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/comfortaa_bold"
                                 android:textSize="15dp"
-                                android:textColor="@color/blue"
-                                android:text="Layer"/>
+                                android:textColor="@color/black"
+                                android:text="A trial lesson :"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/comfortaa_bold"
                                 android:textSize="15dp"
-                                android:textColor="@color/blue"
-                                android:text="Layer"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:id="@+id/text_soft"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="15dp"
-                                android:textColor="@color/blue"
-                                android:text="Layer"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="15dp"
-                                android:textColor="@color/blue"
-                                android:text="Layer"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textSize="15dp"
-                                android:textColor="@color/blue"
-                                android:text="Layer"/>
+                                android:textColor="@color/black"
+                                android:text="Price :"/>
                         </LinearLayout>
 
-                        <com.google.android.material.button.MaterialButton
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/blue"
-                            android:text="Start"
-                            android:background="@color/white"
-                            android:layout_marginStart="80dp"
-                            android:layout_marginTop="20dp"
-                            />
-                        <ImageButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/star"
-                            android:layout_marginTop="30dp"
-                            android:layout_marginStart="40dp"/>
+                            android:layout_marginStart="20dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/language_layer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:textColor="@color/blue"
+                                android:text="B1"/>
+                            <TextView
+                                android:id="@+id/duration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:textColor="@color/blue"
+                                android:text="30 min"/>
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/comfortaa_bold"
+                                android:textColor="@color/red"
+                                android:text="USD 15.00"/>
+                        </LinearLayout>
 
                     </LinearLayout>
-                </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_stat_lern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="More" />
+                <ImageView
+                    android:id="@+id/button_like"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/like"
+                    android:layout_marginStart="10dp"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</android.window.SplashScreenView>
 </androidx.appcompat.widget.LinearLayoutCompat>

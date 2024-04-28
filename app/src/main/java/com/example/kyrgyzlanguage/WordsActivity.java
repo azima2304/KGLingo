@@ -27,7 +27,7 @@ public class WordsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_words);
 
 
-        recyclerView = findViewById(R.id.rv_choose);
+        recyclerView = findViewById(R.id.rv_words);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 

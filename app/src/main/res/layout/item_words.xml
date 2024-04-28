@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:layout_marginBottom="20dp"
         app:cardCornerRadius="20dp">
 
 
@@ -22,31 +21,29 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:padding="10dp">
 
                 <ImageView
-                    android:id="@+id/image_card_model"
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
+                    android:id="@+id/image_user"
+                    android:layout_width="25dp"
+                    android:layout_height="17dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/user" />
 
                 <TextView
-                    android:id="@+id/title_card"
+                    android:id="@+id/user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/comfortaa_bold"
-                    android:text="Wella "
+                    android:text="Arthur"
                     android:textColor="@color/blue"
-                    android:textSize="16sp"
+                    android:textSize="10sp"
                     android:textStyle="bold" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -58,9 +55,8 @@
                     android:id="@+id/text_word_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/krona_one"
-                    android:text="Бишкек и его красивые виды"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Туулга"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -71,9 +67,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/comfortaa_bold"
-                    android:text="Бишкек и его красивые виды"
+                    android:text="жоокердин согуштук баш кийими"
                     android:textColor="@color/red"
-                    android:textSize="10dp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>

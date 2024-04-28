@@ -30,6 +30,7 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".TestActivity" />
         <activity android:name=".WordsActivity" />
+        <activity android:name=".ArticelActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

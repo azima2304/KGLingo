@@ -85,7 +85,7 @@ public class PeopleFragment extends Fragment {
                 binding.podcast.setBackgroundResource(R.drawable.round_back_white10);
 
 
-                Intent intent = new Intent(requireContext(), ArticleActivity.class);
+                Intent intent = new Intent(requireContext(), ArticelActivity.class);
                 requireActivity().startActivity(intent);
 
             }

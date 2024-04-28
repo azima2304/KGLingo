@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        app:cardCornerRadius="36dp">
+        app:cardCornerRadius="20dp">
 
 
         <LinearLayout
@@ -25,17 +25,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:padding="10dp">
 
                 <ImageView
-                    android:id="@+id/image_card_model"
+                    android:id="@+id/image_user"
                     android:layout_width="25dp"
                     android:layout_height="17dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/user" />
 
                 <TextView
-                    android:id="@+id/title_card"
+                    android:id="@+id/user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -48,15 +48,14 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/image_star"
-                    android:layout_width="88dp"
-                    android:layout_height="70dp"
+                    android:id="@+id/image_articel"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:scaleType="fitCenter"
                     android:src="@drawable/bish" />
@@ -68,7 +67,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/icon_dollars"
+                        android:id="@+id/articel_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/comfortaa_bold"
@@ -79,17 +78,27 @@
 
 
                     <TextView
-                        android:id="@+id/icon_dollar"
+                        android:id="@+id/articel_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/comfortaa_bold"
-                        android:text="Бишкек и его красивые виды"
+                        android:text="про все красивые виды Бишкека"
                         android:textColor="@color/blue"
                         android:textSize="10dp"
                         android:textStyle="bold" />
 
+                    <Button
+                        android:id="@+id/more_articel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:layout_gravity="end"
+                        android:textSize="10dp"
+                        android:text="More" />
+
                 </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>

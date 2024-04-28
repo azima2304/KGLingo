@@ -4,37 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="20dp"
+    android:padding="10dp"
     tools:context=".PeopleFragment">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    <TextView
-        android:layout_width="277dp"
-        android:layout_height="80dp"
-        android:fontFamily="@font/comfortaa_bold"
-        android:text="Learn the language with the best teachers from all over Kyrgyzstan!"
-        android:textSize="20dp" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:src="@drawable/message"
-        android:layout_marginStart="20dp"
-        android:contentDescription="This button might open another category"
-    />
-    </LinearLayout>
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="Mark your class time so that you can be in class on time!"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/button_message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message1"
+                android:layout_marginStart="30dp"
+                />
+        </LinearLayout>
+
+
+
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -83,6 +91,7 @@
         android:background="@drawable/round_back_white10"
         >
         <ImageView
+
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/words"
@@ -163,8 +172,7 @@
 
 
         </LinearLayout>
-
     </LinearLayout>
-</ScrollView>
+    </LinearLayout>
 
 </FrameLayout>

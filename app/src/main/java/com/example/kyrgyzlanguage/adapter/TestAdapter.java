@@ -64,7 +64,7 @@ public class TestAdapter extends RecyclerView.Adapter<TestAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            questionText = itemView.findViewById(R.id.icon_dollar);
+            questionText = itemView.findViewById(R.id.question);
             option1 = itemView.findViewById(R.id.option1);
             option2 = itemView.findViewById(R.id.option2);
             option3 = itemView.findViewById(R.id.option3);
