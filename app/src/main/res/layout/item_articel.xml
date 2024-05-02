@@ -17,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#5E13B1FB"
+            android:background="#51FFDAC6"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -84,7 +84,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/comfortaa_bold"
                         android:text="про все красивые виды Бишкека"
-                        android:textColor="@color/blue"
+                        android:textColor="@color/black"
                         android:textSize="10dp"
                         android:textStyle="bold" />
 
@@ -92,10 +92,11 @@
                         android:id="@+id/more_articel"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:fontFamily="@font/comfortaa_bold"
                         android:layout_gravity="end"
-                        android:textSize="10dp"
-                        android:text="More" />
+                        android:backgroundTint="@color/red"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:text="More"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 

@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="70dp"
                 android:fontFamily="@font/comfortaa_bold"
-                android:text="Read interesting articles about Kyrgyzstan"
+                android:text="Listen to interesting podcasts in Kyrgyz!"
                 android:textColor="@color/blue"
                 android:textSize="15dp" />
         </RelativeLayout>

@@ -70,8 +70,8 @@ public class PeopleFragment extends Fragment {
                 binding.words.setBackgroundResource(R.drawable.round_back_white10);
 
 
-                Intent intent = new Intent(requireContext(), PodcastActivity.class);
-                requireActivity().startActivity(intent);
+                Intent intent = new Intent(requireActivity(), PodcastActivity.class);
+                startActivity(intent);
 
             }
         });

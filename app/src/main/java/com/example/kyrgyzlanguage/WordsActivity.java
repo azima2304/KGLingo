@@ -1,7 +1,6 @@
 package com.example.kyrgyzlanguage;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,20 +15,18 @@ import java.util.Arrays;
 
 public class WordsActivity extends AppCompatActivity {
 
-    ActivityWordsBinding binding;
-
+    private ActivityWordsBinding binding;
     private RecyclerView recyclerView;
     private WordAdapter wordAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_words);
+        binding = ActivityWordsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-
-        recyclerView = findViewById(R.id.rv_words);
+        recyclerView = binding.rvWords;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
 
         WordModel[] wordList = new WordModel[]{
                 new WordModel("Word 1", "Description 1"),
@@ -41,13 +38,6 @@ public class WordsActivity extends AppCompatActivity {
         wordAdapter = new WordAdapter(Arrays.asList(wordList));
         recyclerView.setAdapter(wordAdapter);
 
-
-        binding.back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        binding.back.setOnClickListener(v -> finish());
     }
-
 }
