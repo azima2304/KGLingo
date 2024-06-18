@@ -13,7 +13,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
+        vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -51,6 +51,5 @@ dependencies {
     implementation ("com.airbnb.android:lottie:4.0.0")
     implementation ("androidx.navigation:navigation-ui:2.5.3")
     implementation ("com.google.android.material:material:1.4.0")
-
-
+    implementation ("com.android.support:appcompat-v7:23.2.0")
 }

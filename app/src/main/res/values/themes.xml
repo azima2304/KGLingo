@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.KyrgyzLanguage" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary" >@color/red</item>
+        <item name="colorPrimary" >@color/white</item>
         <item name="colorPrimaryVariant" >@color/yellow</item>
     </style>
     <style name="DialogAnimation">
